@@ -1,8 +1,7 @@
-# curso-ionic-v1
-Curso Ionic
+# Curso Ionic
 
 ## Clase 1
-[Ionic Intro](http://cortezcristian.github.io/ionic-talk/#/)
+- [Ionic Intro](http://cortezcristian.github.io/ionic-talk/#/)
 
 ```
 1. Clase 1

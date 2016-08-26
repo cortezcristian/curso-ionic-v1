@@ -2,6 +2,7 @@
 
 ## Clase 1
 - [Ionic Intro](http://cortezcristian.github.io/ionic-talk/#/)
+- [Playground](http://play.ionic.io/app/5330f90fe4d4)
 
 ```
 1. Clase 1

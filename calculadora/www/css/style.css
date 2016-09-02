@@ -1,0 +1,14 @@
+/* Empty. Add your own CSS if you like */
+.col-demo {
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: #f7f7f7;
+    text-align: center;
+}
+.utilities {
+   background-color: #0c60ee;
+   color: #FFF;
+}

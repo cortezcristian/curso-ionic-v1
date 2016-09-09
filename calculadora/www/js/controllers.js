@@ -7,6 +7,9 @@ angular.module('starter.controllers', [])
 
   $scope.calc = function(n){
     if(n === '=') {
+      var ops = LocalStorage.get("operaciones") || [];
+      ops.push($scope.result);
+      LocalStorage.set("operaciones", ops);
       $scope.result = Calculator.evaluate($scope.result);
     } else {
       $scope.result += (n == 'x') ? '*' : n;

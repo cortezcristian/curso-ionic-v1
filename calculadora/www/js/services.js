@@ -3,7 +3,7 @@ angular.module('starter.services', [])
 .factory('LocalStorage', function() {
   return {
     get: function(key){
-      return JSON.parse(localStorage[key]);
+      return angular.isDefined(localStorage[key]) ? JSON.parse(localStorage[key]) : localStorage[key];
     },
     set: function(key, val){
       localStorage.setItem(key, JSON.stringify(val));

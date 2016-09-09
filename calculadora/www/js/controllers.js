@@ -1,7 +1,9 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, LocalStorage, Calculator) {
-  $scope.result = '';
+.controller('DashCtrl', function($log, $scope, LocalStorage, Calculator, $stateParams) {
+  $log.log($stateParams);
+  $scope.result = $stateParams.op || '';
+
 
   //LocalStorage.set("demo", {hola:"mundo"});
 
@@ -25,6 +27,8 @@ angular.module('starter.controllers', [])
   //
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+  //
+  $scope.ops = LocalStorage.get("operaciones");
 
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {

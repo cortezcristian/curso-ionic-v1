@@ -6,12 +6,20 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
+var wiredep = require('wiredep').stream;
 
 var paths = {
   sass: ['./scss/**/*.scss']
 };
 
 gulp.task('default', ['sass']);
+
+
+gulp.task('wiredep', function(){
+  gulp.src('./www/index.html')
+    .pipe(wiredep())
+    .pipe(gulp.dest('./www'));
+});
 
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')

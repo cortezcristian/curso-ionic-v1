@@ -3,6 +3,18 @@
 ## Clase 1
 - [Ionic Intro](http://cortezcristian.github.io/ionic-talk/#/)
 - [Playground](http://play.ionic.io/app/5330f90fe4d4)
+- [Karma](http://karma-runner.github.io/1.0/intro/installation.html)
+
+
+## Setup Karma
+
+```
+$ npm install -g karma-cli # Commandline Interface
+$ npm install karma karma-jasmine karma-phantomjs-launcher jasmine-core --save-dev
+$ mkdir tests
+$ karma init tests/karma.config.js
+$ karma start tests/karma.config.js
+```
 
 ```
 1. Clase 1
@@ -12,7 +24,7 @@
 1.4. Bases de AngularJS (module, config, run)
 1.5. Prototipado rápido
 
-2. Clase 2 
+2. Clase 2
 2.1. Navegación: entendiendo ui-router
 2.2. Ionic Components
 2.3. Bases de AngularJS (controller, directives, services)

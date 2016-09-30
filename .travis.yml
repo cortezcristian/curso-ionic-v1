@@ -4,7 +4,9 @@ node_js:
 before_script:
   - npm install -g bower karma-cli gulp-cli
   - cd calculadora && npm install && bower install
+  - cd calculadora && npm install karma karma-jasmine karma-phantomjs-launcher jasmine-core
 script:
+  - pwd
   - cd calculadora && karma start tests/karma.config.js
 
 

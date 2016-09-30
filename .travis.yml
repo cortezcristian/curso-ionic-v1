@@ -5,6 +5,7 @@ before_script:
   - npm install -g bower karma-cli gulp-cli
   - cd calculadora && npm install && bower install
 script:
-  - cd calculadora && karma start tests/karma.config.js
+  - pwd
+  - karma start tests/karma.config.js
 
 

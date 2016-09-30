@@ -1,4 +1,5 @@
 # Curso Ionic
+[![Build Status](https://travis-ci.org/cortezcristian/curso-ionic-v1.svg?branch=master)](https://travis-ci.org/cortezcristian/curso-ionic-v1)
 
 ## Clase 1
 - [Ionic Intro](http://cortezcristian.github.io/ionic-talk/#/)

@@ -21,7 +21,7 @@ describe("CalcServ", function(){
 
   it('debe levantar excepcion con cadenas de textos', function(){
     //expect(CServ.alcuadrado(2)).toBe(4);
-    expect(function(){CServ.alcuadrado("Hola :)")}).toThrow();
+    expect(function(){ CServ.alcuadrado("Hola :)") }).toThrow();
   });
 
 });
